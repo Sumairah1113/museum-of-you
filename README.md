@@ -22,3 +22,13 @@ Exhibitions persist. Notes are optional captions attached to objects, not tempor
 Develop low-fidelity wireframes and evaluate the create-and-return journey. Record actual observations separately from assumptions.
 
 All sample exhibition content is fictional. No interview findings or measured outcomes are claimed.
+
+## Working app
+
+The first browser-based version lives in `app/dist/`. It supports exhibition creation, image and audio uploads, optional object notes, ordering, editing, and revisiting. IndexedDB stores exhibitions and files on the current browser; there is no cross-device sync or cloud backup.
+
+Run locally with `python3 -m http.server 4173 --directory app/dist`, then visit `http://localhost:4173`.
+
+Private hosted app: https://museum-of-you-sumairah.copper-duck-3024.chatgpt.site
+
+Browser QA verified draft creation, saving, persistence after reload, and reopening. Upload and audio playback require further testing with representative files.
